@@ -23,11 +23,10 @@ namespace Khoolivia
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/custom").Include(
-                      "~/Scripts/plugins.js",
-                      "~/Scripts/main.js"));
+            bundles.Add(new ScriptBundle("~/content/bootstrap").Include(
+                      "~/Content/bootstrap.css"));
 
-            bundles.Add(new ScriptBundle("~/bundles/libs").Include(
+            bundles.Add(new ScriptBundle("~/bundles/wedding/js").Include(
                "~/Scripts/libs/jquery.appear.js",
                "~/Scripts/libs/jquery.hoverIntent.js",
                "~/Scripts/libs/jquery.easing.1.3.js",
@@ -46,14 +45,43 @@ namespace Khoolivia
                "~/Scripts/libs/owl.carousel.min.js",
                "~/Scripts/libs/jquery.fractionslider.min.js",
                "~/Scripts/libs/jquery.flexslider-min.js",
-               "~/Scripts/libs/jquery.bxslider.min.js"));
+               "~/Scripts/libs/jquery.bxslider.min.js",
+               "~/Scripts/plugins.js",
+               "~/Scripts/main.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include(
+            bundles.Add(new StyleBundle("~/Content/wedding/css").Include(
                       "~/Content/jquery.countdown.css",
-                      "~/Content/bootstrap.css",
                       "~/Content/main3.css",
                       "~/Content/animations.css",
                       "~/Content/fonts.css"));
+
+            #region Luv
+
+            bundles.Add(new StyleBundle("~/Content/luv/css").Include(
+                "~/Content/luv/magnific-popup.css",
+                "~/Content/luv/owl.carousel",
+                "~/Content/luv/owl.theme.css",
+                "~/Content/luv/supersized.css",
+                "~/Content/luv/supersized.shutter.css",
+                "~/Content/luv/pink.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/luv/js").Include(
+            "~/Scripts/luv/device.js",
+            "~/Scripts/luv/jquery.easing.js",
+            "~/Scripts/luv/jquery.magnific-popup.js",
+            "~/Scripts/luv/jquery.nav.js",
+            "~/Scripts/luv/jquery.nicescroll.js",
+            "~/Scripts/luv/jquery.queryloader2.js",
+            "~/Scripts/luv/jquery.sticky.js",
+            "~/Scripts/luv/masonry.pkgd.js",
+            "~/Scripts/luv/owl.carousel.js",
+            "~/Scripts/luv/supersized.3.2.7.js",
+            "~/Scripts/luv/supersized.shutter.js",
+            "~/Scripts/luv/waypoints.js",
+            "~/Scripts/luv/script.js"));
+
+            #endregion
+
 
             // Set EnableOptimizations to false for debugging. For more information,
             // visit http://go.microsoft.com/fwlink/?LinkId=301862

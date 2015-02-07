@@ -1,4 +1,7 @@
-﻿
+﻿@section Content {
+    @Styles.Render("~/Content/wedding/css")
+}
+
 <div id="box_wrapper">
 
     <section id="mainslider">
@@ -12,7 +15,7 @@
                 </li>
                 <li class="flex-active-slide" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;">
                     <div class="slide_overlay">
-                        <img src="./content/img/flex_slide02.jpg" alt="" draggable="false">
+                        <img src="./content/img/Whizarts_shiennee_justin_0128.jpg" alt="" draggable="false">
                     </div>
 
                 </li>
@@ -1088,3 +1091,8 @@
 
 
 <a href="#" id="toTop" style="display: inline;"><span id="toTopHover"></span>To Top</a><div id="switcher"><span class="glyphicon glyphicon-cog"></span><h6>Colors</h6><ul id="switcher-colors" class="list-inline"><li><a href="#" data-color="" class="color1"></a></li><li><a href="#" data-color="2" class="color2"></a></li><li><a href="#" data-color="3" class="color3"></a></li><li><a href="#" data-color="4" class="color4"></a></li><li><a href="#" data-color="5" class="color5"></a></li><li><a href="#" data-color="6" class="color6"></a></li></ul><h6>Layout</h6><div class="checkbox"><label><input type="checkbox" id="layout"> Boxed</label></div></div>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/wedding/js")
+}

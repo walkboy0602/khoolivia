@@ -2618,15 +2618,15 @@ aside .widget a:hover {
 }
 
 #story {
-  background-image: url(../example/parallax/story.jpg);
+  background-image: url(../content/img/story.jpg);
 }
 
 #invitation {
-  background-image: url(../example/parallax/invitation.jpg);
+  background-image: url(../content/img/invitation.jpg);
 }
 
 #mailus {
-  background-image: url(../example/parallax/mailus.jpg);
+  background-image: url(../content/img/mailus.jpg);
 }
 
 #copyright p {
