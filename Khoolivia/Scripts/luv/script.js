@@ -1,4 +1,4 @@
-		
+﻿		
 	'use strict';
 	//Check IE11
 	function IEVersion() {
@@ -6,6 +6,8 @@
    		 	return 11;
 		}
 	}
+
+	var DomainUrl = 'http://bazaarstorage.blob.core.windows.net/wedding';
 	
 	// Preloader
 	//==================================================================================
@@ -64,7 +66,6 @@
 		});
 		
 		window.addEventListener("DOMContentLoaded", function() {	
-		
     		$("body").queryLoader2({
         		barColor: "#00c0b6",
         		percentage: true,
@@ -96,8 +97,10 @@
 		$.supersized({
 			slides  :  	
 			[ 
-				{	image : 'images/slider1.jpg' } ,
-				{	image : 'images/slider2.jpg' }
+				{ image: DomainUrl + '/img/background2.jpg' },
+				{ image: DomainUrl + '/img/background3.jpg' },
+                { image: DomainUrl + '/img/background4.jpg' },
+                { image: DomainUrl + '/img/background1.jpg' }
 			]
 		});
 	});
@@ -214,17 +217,32 @@
 	
 	// Gallery - Item
 	//==================================================================================
-	$('#category1').magnificPopup({
+	$('#ourVacation').magnificPopup({
     	items: [
       	{
-        	src: 'images/gallery/gallery_photo1.jpg'
+      	    src: DomainUrl + '/img/we-7.jpg'
       	},
      	{
-        	src: 'images/gallery/gallery_photo2.jpg',
+     	    src: DomainUrl + '/img/we-11.jpg'
       	},
       	{
-        	src: 'images/gallery/gallery_photo3.jpg',
-      	}
+      	    src: DomainUrl + '/img/we-12.jpg'
+      	},
+        {
+            src: DomainUrl + '/img/we-13.jpg'
+        },
+        {
+            src: DomainUrl + '/img/we-6.jpg'
+        },
+        {
+            src: DomainUrl + '/img/we-8.jpg'
+        },
+        {
+            src: DomainUrl + '/img/we-9.jpg'
+        },
+        {
+            src: DomainUrl + '/img/we-10.jpg'
+        },
     	],
     	gallery: {
      	 	enabled: true
@@ -244,17 +262,23 @@
   		},
 	});
 	
-	$('#category2').magnificPopup({
+	$('#friendGallery').magnificPopup({
     	items: [
-      	{
-        	src: 'images/gallery/gallery_photo4.jpg'
-      	},
      	{
-        	src: 'images/gallery/gallery_photo5.jpg',
+     	    src: DomainUrl + '/img/friend-1.jpg'
       	},
       	{
-        	src: 'images/gallery/gallery_photo6.jpg',
-      	}
+      	    src: DomainUrl + '/img/friend-2.jpg'
+      	},
+      	{
+      	    src: DomainUrl + '/img/friend-3.jpg'
+      	},
+      	{
+      	    src: DomainUrl + '/img/friend-4.jpg'
+      	},
+    	{
+	        src: DomainUrl + '/img/friend-0.jpg'
+	    }
     	],
     	gallery: {
      	 	enabled: true
@@ -379,17 +403,69 @@
 	
 	// Blog-2
 	//==================================================================================
-	var $blog = $('#blog2');
+	var $prewedding = $('#prewedding');
 	// initialize Masonry after all images have loaded  
-	$blog.imagesLoaded( function() {
-		$blog.masonry({
+	$prewedding.imagesLoaded(function () {
+	    $prewedding.masonry({
 			columnWidth: ".grid_sizer_blog",
 			itemSelector: ".masonry_col_blog",
 			transitionDuration: "1s",
 			gutter: 20
 		});
 	});
-	
+
+
+	// PREWEDDING PHOTO
+    //==================================================================================
+	$('#prewedding').magnificPopup({
+	    delegate: '.photo_item_wrap a', // child items selector, by clicking on it popup will open
+	    type: 'image',
+	    closeOnContentClick: false,
+	    closeBtnInside: false,
+	    mainClass: 'mfp-with-zoom mfp-img-mobile',
+	    image: {
+	        verticalFit: true,
+	        //titleSrc: function (item) {
+	        //    return item.el.attr('title') + ' &middot; <a class="image-source-link" href="' + item.el.attr('data-source') + '" target="_blank">image source</a>';
+	        //}
+	    },
+	    gallery: {
+	        enabled: true
+	    },
+	    zoom: {
+	        enabled: true,
+	        duration: 300, // don't foget to change the duration also in CSS
+	        opener: function (element) {
+	            return element.find('img');
+	        }
+	    }
+
+	});
+
+	$('.zoom-gallery').magnificPopup({
+	    delegate: 'a', // child items selector, by clicking on it popup will open
+	    type: 'image',
+	    closeOnContentClick: false,
+	    closeBtnInside: false,
+	    mainClass: 'mfp-with-zoom mfp-img-mobile',
+	    image: {
+	        verticalFit: true,
+	        titleSrc: function (item) {
+	            return item.el.attr('title') + ' &middot; <a class="image-source-link" href="' + item.el.attr('data-source') + '" target="_blank">image source</a>';
+	        }
+	    },
+	    gallery: {
+	        enabled: false 
+	    },
+	    zoom: {
+	        enabled: true,
+	        duration: 300, // don't foget to change the duration also in CSS
+	        opener: function (element) {
+	            return element.find('img');
+	        }
+	    }
+
+	});
 	
 	$(document).ready(function() {
 		var a = 0;
@@ -445,29 +521,29 @@
    	jQuery(document).ready(function($) {
         $("#location_map").gMap({
              maptype: google.maps.MapTypeId.ROADMAP, 
-             zoom: 14, 
+             zoom: 13, 
              markers: 
 			 	[
 			 		{
-                 		latitude: -33.898361, 
-                 		longitude: 151.175290, 
-                 		html: "<strong>Manalia Tower</strong>", 
+			 		    latitude: 2.056622,
+			 		    longitude: 102.587732,
+			 		    html: "<strong>The Wedding - Sin Kee Ting Restaurant (新奇珍)</strong>",
                 		popup: true,               
-					},
-					{
-                		latitude: -33.905485, 
-                 		longitude: 151.169131, 
-                 		html: "<strong>Comfort Inn</strong>", 
-                 		popup: true,               
-                    } 
+			 		},
+                    {
+                        latitude: 2.036812,
+                        longitude: 102.558491,
+                        html: "<strong>The Party - Groom's house</strong>",
+                        popup: true,      
+                    }
                 ], 
              panControl: true, 
              zoomControl: true, 
              mapTypeControl: true, 
              scaleControl: true, 
              streetViewControl: true, 
-             scrollwheel: false, 
-             styles: [ { "stylers": [ { "hue": "#00c0b6" }, { "gamma": 1 }, { "saturation": -50 } ] } ], 
+             scrollwheel: true, 
+             //styles: [ { "stylers": [ { "hue": "#00c0b6" }, { "gamma": 1 }, { "saturation": -50 } ] } ], 
              onComplete: function() {
                  // Resize and re-center the map on window resize event
                  var gmap = $("#location_map").data('gmap').gmap;

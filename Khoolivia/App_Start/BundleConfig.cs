@@ -24,8 +24,10 @@ namespace Khoolivia
                       "~/Scripts/respond.js"));
 
             bundles.Add(new ScriptBundle("~/content/bootstrap").Include(
-                      "~/Content/bootstrap.css"));
+                      "~/Content/bootstrap.min.css", 
+                      "~/Content/font-awesome.css"));
 
+            #region Wedding
             bundles.Add(new ScriptBundle("~/bundles/wedding/js").Include(
                "~/Scripts/libs/jquery.appear.js",
                "~/Scripts/libs/jquery.hoverIntent.js",
@@ -54,16 +56,18 @@ namespace Khoolivia
                       "~/Content/main3.css",
                       "~/Content/animations.css",
                       "~/Content/fonts.css"));
+            #endregion
 
             #region Luv
 
             bundles.Add(new StyleBundle("~/Content/luv/css").Include(
-                "~/Content/luv/magnific-popup.css",
-                "~/Content/luv/owl.carousel",
-                "~/Content/luv/owl.theme.css",
                 "~/Content/luv/supersized.css",
                 "~/Content/luv/supersized.shutter.css",
-                "~/Content/luv/pink.css"));
+                "~/Content/luv/animate.css",
+                "~/Content/luv/magnific-popup.css",
+                "~/Content/luv/owl.carousel.css",
+                "~/Content/luv/owl.theme.css",
+                "~/Content/luv/style.css"));
 
             bundles.Add(new ScriptBundle("~/bundles/luv/js").Include(
             "~/Scripts/luv/device.js",
@@ -77,6 +81,7 @@ namespace Khoolivia
             "~/Scripts/luv/owl.carousel.js",
             "~/Scripts/luv/supersized.3.2.7.js",
             "~/Scripts/luv/supersized.shutter.js",
+            "~/Scripts/luv/jquery.gmap.js",
             "~/Scripts/luv/waypoints.js",
             "~/Scripts/luv/script.js"));
 

@@ -1,8 +1,1073 @@
 ﻿@section Content {
     @Styles.Render("~/Content/luv/css")
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,900,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+
 }
 
 
+<!-- PRELOADER -->
+<!-- To change the couple name, edit jquery.queryloader2.js line 943  -->
+<div id="start_preloader"></div>
+
+<!--HOME SECTION START-->
+<section id="home">
+    <div id="logo_wrapper" class="container">
+        <div class="row">
+            <div class="col-md-1">
+                <a id="logo_link" href="./content/luv/img/Luv.html">
+                    <div id="logo-sticky-wrapper" class="sticky-wrapper is-sticky" style="height: 80px;">
+                        <span id="logo" class="animation animated fadeInDown" style="visibility: visible; position: fixed; top: 0px;">
+                            Khoo&amp;Olivia
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="slide_content" class="row animated delay1 fadeInRight" style="visibility: visible;">
+            <div class="col-md-4 pull-right text-right">
+                <div class="heart_row">
+                    <span class="glyphicon glyphicon-heart"></span>
+                    <span class="glyphicon glyphicon-heart"></span>
+                    <span class="glyphicon glyphicon-heart"></span>
+                    <span class="glyphicon glyphicon-heart"></span>
+                    <span class="glyphicon glyphicon-heart"></span>
+                    <span class="glyphicon glyphicon-heart"></span>
+                    <span class="glyphicon glyphicon-heart"></span>
+                    <span class="glyphicon glyphicon-heart"></span>
+                </div>
+                <div id="slide_text">
+                    <span id="slide_text1">WE ARE</span><br>
+                    <span id="slide_text2">GETTING</span><br>
+                    <span id="slide_text3">MARRIED</span><br>
+                    <div id="slide_text4">
+                        12<span class="glyphicon glyphicon-heart"></span>08<span class="glyphicon glyphicon-heart"></span>15
+                    </div>
+                </div>
+                <div class="heart_row">
+                    <span class="glyphicon glyphicon-heart"></span>
+                    <span class="glyphicon glyphicon-heart"></span>
+                    <span class="glyphicon glyphicon-heart"></span>
+                    <span class="glyphicon glyphicon-heart"></span>
+                    <span class="glyphicon glyphicon-heart"></span>
+                    <span class="glyphicon glyphicon-heart"></span>
+                    <span class="glyphicon glyphicon-heart"></span>
+                    <span class="glyphicon glyphicon-heart"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div id="nav-sticky-wrapper" class="sticky-wrapper is-sticky" style="height: 50px;">
+            <nav id="nav" class="navbar navbar-default" role="navigation" style="position: fixed; top: 0px;">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav_menu">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="nav_menu">
+                        <ul id="nav_list" class="nav navbar-nav navbar-right">
+                            <li class=""><a href="#home">Home</a></li>
+                            <li class="active"><a href="#couple">Couple</a></li>
+                            <li class=""><a href="#the_day">The Day</a></li>
+                            <li><a href="#bridesmaid">Bridesmaid</a></li>
+                            <li><a href="#groomsmen">Groomsmen</a></li>
+                            <li><a href="#gallery">Our Moment</a></li>
+                            <li><a href="#secPrewedding">Prewedding Gallery</a></li>
+                            <li><a href="#rsvp">RSVP</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container -->
+            </nav>
+        </div>
+    </header>
+</section><!--END of HOME SECTION-->
+<!--COUPLE SECTION START-->
+<section id="couple">
+    <div class="container">
+        <!-- TITLE -->
+        <div class="row">
+            <div id="wedding_title" class="col-md-12 text-center the_title animation fadeInUp animated" style="visibility: visible;">
+                <h2 class="margin0 padding0">10 YEARS OF LOVE</h2>
+                <span class="margin0 padding0 sub_title">NOW COME MARRIAGE</span>
+            </div>
+            <div class="col-md-offset-1"></div>
+            <div id="wedding_intro" class="col-md-10 col-md-offset-1 text-center animation delay1 fadeInUp animated" style="visibility: visible;">
+                <span class="glyphicon glyphicon-heart intro_heart"></span>
+                <span class="intro">
+                    Khoo first met Olivia in schondary school, but they weren't so close to each other and had not contact for 3 years.
+                    What make Khoo and Olivia meet each other again?
+                    <br /> Well, it was 1 SMS...
+                </span>
+            </div>
+        </div><!-- END TITLE -->
+
+        <div class="row">
+            <!-- HIS PROFILE -->
+            <div id="his_profile" class="col-md-6 animation delay1 fadeInLeft animated" style="visibility: visible;">
+                <div class="photo_item">
+                    <div class="photo_item_preview">
+                        <a href="#">
+                            <img src="@ViewBag.UrlDomain/img/him.jpg" alt="">
+                        </a>
+                        <div class="photo_item_overlay">
+                            <a class="popup" href="http://demo.dethemes.com/luv/him.html">
+                                <span class="icon_background"></span>
+                                <span class="glyphicon glyphicon-zoom-in icon_button"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile">
+                    <div class="row">
+                        <div class="col-md-10 col-sm-10 col-xs-10">
+                            <h3 class="margin0 padding0">Khoo</h3>
+                            <span class="margin0 padding0 subname">CHEN HAU</span>
+                        </div>
+                        <div id="male_icon" class="col-md-2 col-sm-2 col-xs-2">
+                            <img src="./content/luv/img/male_icon.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row profile_text">
+                        <div class="col-md-12">
+                            <p>
+                                Khoo born on 1986, June 2 and grew in Muar. His father is a singer, while his monther is a housewife.
+                                Due to father's occupation always travel a lot, he and his sibling were grew up in their grandparent house, they
+                                called it as "新家" (Xin Jia). He has a nickname in his family, all of them like to call him as "Ah Bee".
+
+                                @*<a class="popup" href="http://demo.dethemes.com/luv/him.html">.....</a>*@
+                            </p>
+                            <p>
+                                Khoo graduated from high school "中化中学“, and continue his study in KL and completed with Bachelor Degree in Software
+                                Engineering in 2009. He has then started his career as Web Application Developer in Jobstreet.com (2009-2012),
+                                iProperty.com (2012-2014) and currently employed in Hong Leong bank developing an online banking system.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- END OF HIS PROFILE -->
+            <!-- HER PROFILE -->
+            <div id="her_profile" class="col-md-6 animation delay1 fadeInRight animated" style="visibility: visible;">
+                <div class="photo_item">
+                    <div class="photo_item_preview">
+                        <a href="#">
+                            <img src="@ViewBag.UrlDomain/img/her.jpg" alt="">
+                        </a>
+                        <div class="photo_item_overlay">
+                            <a class="popup" href="http://demo.dethemes.com/luv/her.html">
+                                <span class="icon_background"></span>
+                                <span class="glyphicon glyphicon-zoom-in icon_button"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile">
+                    <div class="row">
+                        <div class="col-md-10 col-sm-10 col-xs-10">
+                            <h3 class="margin0 padding0">Olivia</h3>
+                            <span class="margin0 padding0 subname">SOO CHUN CHOON</span>
+                        </div>
+                        <div id="female_icon" class="col-md-2 col-sm-2 col-xs-2">
+                            <img src="./content/luv/img/female_icon.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row profile_text">
+                        <div class="col-md-12">
+                            <p>
+                                When you realize you want to spend the rest of your life with somebody, you want the rest of your life to start as soon as possible. I would rather share one lifetime with you than face all the ages of this world alone. You have made a place in my heart where I thought there was no room for anything else.
+                                <a class="popup" href="http://demo.dethemes.com/luv/her.html">.....</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- END OF HER PROFILE -->
+        </div>
+    </div>
+</section><!--END of COUPLE SECTION-->
+<!--PHOTO DIVIDER1 SECTION START-->
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="photo_divider1" class="photo_divider">
+            </div>
+        </div>
+    </div>
+</section><!--END of PHOTO DIVIDER1 SECTION-->
+<!--THE DAY SECTION START-->
+<section id="the_day">
+    <div class="container">
+        <!-- TITLE -->
+        <div class="row">
+            <div id="where_when_title" class="col-md-12 text-center the_title animation fadeInUp animated" style="visibility: visible;">
+                <h2 class="margin0 padding0">WHERE AND WHEN</h2>
+                <span class="margin0 padding0 sub_title">OF THE MARRIAGE</span>
+            </div>
+            <div class="col-md-offset-1"></div>
+            <div id="where_when_intro" class="col-md-10 col-md-offset-1 text-center animation delay1 fadeInUp animated" style="visibility: visible;">
+                <span class="glyphicon glyphicon-heart intro_heart"></span>
+                <span class="intro">The wedding has split into three section....</span>
+            </div>
+        </div><!-- END TITLE -->
+        <!-- LOCATION, DATE&TIME, ACCOMODATION-->
+        <div class="row">
+            <div class="col-md-4">
+                <div id="accomodation" class="box animation fadeInLeft" style="visibility: hidden;">
+                    <div>
+                        <span class="glyphicon glyphicon-home box_icon"></span>
+                        <span class="box_title">THE PARTY - </span><strong>1st May, 2015</strong>
+                    </div>
+                    <div class="box_text">
+                        <p>The wedding party will be held on <strong>Friday May 1, 2015</strong>, start from <strong>7pm</strong> at groom's house. Feel free to <a href="#rsvp">register.</a></p>
+                        @*<p>We have arranged accommodations at a nearby <strong>Comfort Inn</strong> for guests who are making a bit of a trip.</p>*@
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="location" class="box animation delay1 fadeInDown" style="visibility: hidden;">
+                    <div>
+                        <span class="glyphicon glyphicon-map-marker box_icon"></span>
+                        <span class="box_title">THE WEDDING - </span><strong>2nd May, 2015</strong>
+                    </div>
+                    <div class="box_text">
+                        <p>The wedding dinner will be held on <strong> Saturday start at 6.30pm</strong> at <strong>Sin Kee Ting Restaurant</strong>. Check the map to get the direction.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="date_time" class="box animation delay2 fadeInRight" style="visibility: hidden;">
+                    <div>
+                        <span class="glyphicon glyphicon-time box_icon"></span>
+                        <span class="box_title">THE ROM - </span><strong>3rd May, 2015</strong>
+                    </div>
+                    <div class="box_text">
+                        <p>We will be register of our marriage on this day starting at <strong>Ten O'clock in the morning</strong>.</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- END OF LOCATION -->
+        <!-- MAP -->
+        <div class="row">
+            <div class="col-md-12">
+                <div id="location_map" class="animation fadeInUp"></div>
+            </div>
+        </div><!-- END OF MAP-->
+
+    </div>
+</section><!--END of THE DAY SECTION-->
+<!--PHOTO DIVIDER2 SECTION START-->
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="photo_divider2" class="photo_divider">
+            </div>
+        </div>
+    </div>
+</section><!--END of PHOTO DIVIDER2 SECTION-->
+<!--BRIDESMAID SECTION START-->
+<section id="bridesmaid">
+    <div class="container">
+        <!-- TITLE -->
+        <div class="row">
+            <div id="bridesmaid_title" class="col-md-12 text-center the_title animation fadeInUp" style="visibility: hidden;">
+                <h2 class="margin0 padding0">BRIDESMAID</h2>
+                <span class="margin0 padding0 sub_title">PRETTY FRIENDS</span>
+            </div>
+            <div class="col-md-offset-1"></div>
+            <div id="bridesmaid_intro" class="col-md-10 col-md-offset-1 text-center animation delay1 fadeInUp" style="visibility: hidden;">
+                <span class="glyphicon glyphicon-heart intro_heart"></span>
+                <span class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus, leo at pretium commodo, dui ipsum tristique dolor, in ullamcorper tellus velit quis nisl. In placerat volutpat elit quis dictum. Ut id sem nec mauris lacinia rhoncus.</span>
+            </div>
+        </div><!-- END TITLE -->
+        <!-- BRIDESMAID ROW -->
+        <div class="row">
+            <div class="col-md-4 col-sm-6 photo_col animation fadeIn" style="visibility: hidden;">
+                <div class="photo_item">
+                    <div class="photo_item_preview fix_height">
+                        <a href="#">
+                            <img src="./content/luv/img/bridesmaid/bridesmaid1.jpg" alt="">
+                        </a>
+                        <div class="photo_item_overlay">
+                            <a href="#">
+                                <span class="icon_background"></span>
+                                <span class="glyphicon glyphicon-zoom-in icon_button"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center name_wrapper">
+                    <h4 class="margin0 padding0">EMMA GRACE</h4>
+                    <p>Maid of Honor</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 photo_col animation delay1 fadeIn" style="visibility: hidden;">
+                <div class="photo_item">
+                    <div class="photo_item_preview fix_height">
+                        <a href="#">
+                            <img src="./content/luv/img/bridesmaid/bridesmaid2.jpg" alt="">
+                        </a>
+                        <div class="photo_item_overlay">
+                            <a href="#">
+                                <span class="icon_background"></span>
+                                <span class="glyphicon glyphicon-zoom-in icon_button"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center name_wrapper">
+                    <h4 class="margin0 padding0">AUDREY AMELIA</h4>
+                    <p>Best Friend</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 photo_col animation delay2 fadeIn" style="visibility: hidden;">
+                <div class="photo_item">
+                    <div class="photo_item_preview fix_height">
+                        <a href="#">
+                            <img src="./content/luv/img/bridesmaid/bridesmaid3.jpg" alt="">
+                        </a>
+                        <div class="photo_item_overlay">
+                            <a href="#">
+                                <span class="icon_background"></span>
+                                <span class="glyphicon glyphicon-zoom-in icon_button"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center name_wrapper">
+                    <h4 class="margin0 padding0">ABIGAIL CHLOE</h4>
+                    <p>Room Mate</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 photo_col animation fadeIn" style="visibility: hidden;">
+                <div class="photo_item">
+                    <div class="photo_item_preview fix_height">
+                        <a href="#">
+                            <img src="./content/luv/img/bridesmaid/bridesmaid4.jpg" alt="">
+                        </a>
+                        <div class="photo_item_overlay">
+                            <a href="#">
+                                <span class="icon_background"></span>
+                                <span class="glyphicon glyphicon-zoom-in icon_button"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center name_wrapper">
+                    <h4 class="margin0 padding0">CLARA NATALIE</h4>
+                    <p>College Friend</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 photo_col animation delay1 fadeIn" style="visibility: hidden;">
+                <div class="photo_item">
+                    <div class="photo_item_preview fix_height">
+                        <a href="#">
+                            <img src="./content/luv/img/bridesmaid/bridesmaid5.jpg" alt="">
+                        </a>
+                        <div class="photo_item_overlay">
+                            <a href="https://www.facebook.com/lingengng" target="_blank">
+                                <span class="icon_background"></span>
+                                <span class="fa fa-facebook icon_button2"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center name_wrapper">
+                    <h4 class="margin0 padding0">ELAINE NG</h4>
+                    <p>BEST FRIEND</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 photo_col animation delay2 fadeIn" style="visibility: hidden;">
+                <div class="photo_item">
+                    <div class="photo_item_preview">
+                        <a href="#">
+                            <img src="./content/luv/img/bridesmaid6.jpg" alt="">
+                        </a>
+                        <div class="photo_item_overlay">
+                            <a href="#">
+                                <span class="icon_background"></span>
+                                <span class="glyphicon glyphicon-zoom-in icon_button"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center name_wrapper">
+                    <h4 class="margin0 padding0">LUCY EVELYN</h4>
+                    <p>Future Sister in Law</p>
+                </div>
+            </div>
+
+        </div><!-- END BRIDESMAID ROW-->
+    </div>
+</section><!--END of BRIDESMAID SECTION-->
+<!--PHOTO DIVIDER3 SECTION START-->
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="photo_divider3" class="photo_divider">
+            </div>
+        </div>
+    </div>
+</section><!--END of PHOTO DIVIDER3 SECTION-->
+<!--GROOMSMEN SECTION START-->
+<section id="groomsmen">
+    <div class="container">
+        <!-- TITLE -->
+        <div class="row">
+            <div id="groomsmen_title" class="col-md-12 text-center the_title animation fadeInUp" style="visibility: hidden;">
+                <h2 class="margin0 padding0">GROOMSMEN</h2>
+                <span class="margin0 padding0 sub_title">HANDSOME FRIENDS</span>
+            </div>
+            <div class="col-md-offset-1"></div>
+            <div id="groomsmen_intro" class="col-md-10 col-md-offset-1 text-center animation delay1 fadeInUp" style="visibility: hidden;">
+                <span class="glyphicon glyphicon-heart intro_heart"></span>
+                <span class="intro">All "Heng Dai" are from secondary school. We knowing each other for more than 10 years...</span>
+            </div>
+        </div><!-- END TITLE -->
+        <!-- GROOMSMEN ROW -->
+        <div class="row">
+            <div class="col-md-4 col-sm-6 photo_col animation fadeIn" style="visibility: hidden;">
+                <div class="photo_item">
+                    <div class="photo_item_preview fix_height">
+                        <a href="#">
+                            <img src="./content/luv/img/groomsmen/jevi.jpg" alt="">
+                        </a>
+                        <div class="photo_item_overlay">
+                            <a href="https://www.facebook.com/jv.koh" target="_blank">
+                                <span class="icon_background"></span>
+                                <span class="fa fa-facebook icon_button2"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center name_wrapper">
+                    <h4 class="margin0 padding0">JV KOH</h4>
+                    <p>Best Men</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 photo_col animation delay1 fadeIn" style="visibility: hidden;">
+                <div class="photo_item">
+                    <div class="photo_item_preview fix_height">
+                        <a href="#">
+                            <img src="./content/luv/img/groomsmen/jinan.jpg" alt="">
+                        </a>
+                        <div class="photo_item_overlay">
+                            <a href="https://www.facebook.com/ann.c.chua" target="_blank">
+                                <span class="icon_background"></span>
+                                <span class="fa fa-facebook icon_button2"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center name_wrapper">
+                    <h4 class="margin0 padding0">JIN ANN</h4>
+                    <p>Best Friend</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 photo_col animation delay2 fadeIn" style="visibility: hidden;">
+                <div class="photo_item">
+                    <div class="photo_item_preview fix_height">
+                        <a href="#">
+                            <img src="./content/luv/img/groomsmen/wenbin2.jpg" alt="">
+                        </a>
+                        <div class="photo_item_overlay">
+                            <a href="https://www.facebook.com/bplim86" target="_blank">
+                                <span class="icon_background"></span>
+                                <span class="fa fa-facebook icon_button2"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center name_wrapper">
+                    <h4 class="margin0 padding0">BOON BING</h4>
+                    <p>Best Friend</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 photo_col animation fadeIn" style="visibility: hidden;">
+                <div class="photo_item">
+                    <div class="photo_item_preview fix_height">
+                        <a href="#">
+                            <img src="./content/luv/img/groomsmen/sengwee3.jpg" alt="">
+                        </a>
+                        <div class="photo_item_overlay">
+                            <a href="https://www.facebook.com/acao0310" target="_blank">
+                                <span class="icon_background"></span>
+                                <span class="fa fa-facebook icon_button2"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center name_wrapper">
+                    <h4 class="margin0 padding0">SENG WEE</h4>
+                    <p>Best Friend</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 photo_col animation delay1 fadeIn" style="visibility: hidden;">
+                <div class="photo_item">
+                    <div class="photo_item_preview fix_height">
+                        <a href="#">
+                            <img src="./content/luv/img/groomsmen/jennchyn2.jpg" alt="">
+                        </a>
+                        <div class="photo_item_overlay">
+                            <a href="https://www.facebook.com/jennchyn" target="_blank">
+                                <span class="icon_background"></span>
+                                <span class="fa fa-facebook icon_button2"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center name_wrapper">
+                    <h4 class="margin0 padding0">JENN CYHN</h4>
+                    <p>Best Friend</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 photo_col animation delay12fadeIn" style="visibility: hidden;">
+                <div class="photo_item">
+                    <div class="photo_item_preview fix_height">
+                        <a href="#">
+                            <img src="./content/luv/img/groomsmen/ivanteo2.jpg" alt="">
+                        </a>
+                        <div class="photo_item_overlay">
+                            <a href="https://www.facebook.com/ivanteo7312" target="_blank">
+                                <span class="icon_background"></span>
+                                <span class="fa fa-facebook icon_button2"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center name_wrapper">
+                    <h4 class="margin0 padding0">IVAN TEO</h4>
+                    <p>Best Friend</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 photo_col animation fadeIn" style="visibility: hidden;">
+                <div class="photo_item">
+                    <div class="photo_item_preview fix_height">
+                        <a href="#">
+                            <img src="./content/luv/img/groomsmen/chow.jpg" alt="">
+                        </a>
+                        <div class="photo_item_overlay">
+                            <a href="https://www.facebook.com/chow.lim.12" target="_blank">
+                                <span class="icon_background"></span>
+                                <span class="fa fa-facebook icon_button2"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center name_wrapper">
+                    <h4 class="margin0 padding0">CHOW LIM</h4>
+                    <p>Best Friend</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 photo_col animation delay1 fadeIn" style="visibility: hidden;">
+                <div class="photo_item">
+                    <div class="photo_item_preview fix_height">
+                        <a href="#">
+                            <img src="./content/luv/img/groomsmen/zhiqian.jpg" alt="">
+                        </a>
+                        <div class="photo_item_overlay">
+                            <a href="https://www.facebook.com/cheechien.koh" target="_blank">
+                                <span class="icon_background"></span>
+                                <span class="fa fa-facebook icon_button2"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center name_wrapper">
+                    <h4 class="margin0 padding0">CHI CHIEN</h4>
+                    <p>Best Friend</p>
+                </div>
+            </div>
+
+        </div><!-- END GROOMSMEN ROW-->
+    </div>
+</section><!--END of GROOMSMEN SECTION-->
+<!--PHOTO DIVIDER4 SECTION START-->
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="photo_divider4" class="photo_divider">
+            </div>
+        </div>
+    </div>
+</section><!--END of PHOTO DIVIDER4 SECTION-->
+<!--GALLERY-1 SECTION START-->
+<section id="gallery">
+    <div class="container">
+        <!-- TITLE -->
+        <div class="row">
+            <div id="gallery1_title" class="col-md-12 text-center the_title animation fadeInUp" style="visibility: hidden;">
+                <h2 class="margin0 padding0">OUR MOMENT</h2>
+            </div>
+            <div class="col-md-offset-1"></div>
+            <div id="gallery1_intro" class="col-md-10 col-md-offset-1 text-center animation delay1 fadeInUp" style="visibility: hidden;">
+                <span class="glyphicon glyphicon-heart intro_heart"></span>
+                <span class="intro">
+                    Our moment, lovely family and great friends.
+                </span>
+            </div>
+        </div><!-- END TITLE -->
+        <!-- GALLERY ROW1 -->
+        <div class="row">
+            <div class="col-md-6 photo_col animation fadeIn" style="visibility: hidden;">
+                <div class="photo_item">
+                    <div class="photo_item_preview fix_height">
+                        <a href="#">
+                            @*<img src="@ViewBag.UrlDomain/img/we-5.jpg" alt="">*@
+                            <img src="./content/luv/img/we-cover.jpg" alt="">
+                        </a>
+                        <div class="photo_item_overlay">
+                            <a href="#" id="ourVacation">
+                                <span class="icon_background"></span>
+                                <span class="glyphicon glyphicon-zoom-in icon_button"></span>
+                            </a>
+                            <div class="photo_caption_wrapper">
+                                <span class="photo_caption fadeInUp">Our Moment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 photo_col animation delay1 fadeIn" style="visibility: hidden;">
+                <div class="photo_item">
+                    <div class="photo_item_preview fix_height">
+                        <a href="#">
+                            <img src="./content/luv/img/gallery2.jpg" alt="">
+                        </a>
+                        <div class="photo_item_overlay">
+                            <a href="#" id="category4">
+                                <span class="icon_background"></span>
+                                <span class="glyphicon glyphicon-zoom-in icon_button"></span>
+                            </a>
+                            <div class="photo_caption_wrapper">
+                                <span class="photo_caption delay1 fadeInUp">THE PARTY</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- GALLERY ROW2 -->
+            <div class="row">
+                <div class="col-md-6 photo_col animation fadeIn" style="visibility: hidden;">
+                    <div class="photo_item">
+                        <div class="photo_item_preview fix_height">
+                            <a href="#">
+                                <img src="./content/luv/img/family/family-cover.jpg" alt="">
+                            </a>
+                            <div class="photo_item_overlay">
+                                <a href="#" id="category4">
+                                    <span class="icon_background"></span>
+                                    <span class="glyphicon glyphicon-zoom-in icon_button"></span>
+                                </a>
+                                <div class="photo_caption_wrapper">
+                                    <span class="photo_caption delay1 fadeInUp">LOVELY FAMILY</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 photo_col animation delay1 fadeIn" style="visibility: hidden;">
+                    <div class="photo_item">
+                        <div class="photo_item_preview fix_height">
+                            <a href="#">
+                                <img src="./content/luv/img/friend-cover.jpg" alt="">
+                            </a>
+                            <div class="photo_item_overlay">
+                                <a href="#" id="friendGallery">
+                                    <span class="icon_background"></span>
+                                    <span class="glyphicon glyphicon-zoom-in icon_button"></span>
+                                </a>
+                                <div class="photo_caption_wrapper">
+                                    <span class="photo_caption fadeInUp">Great Friends</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section><!--END of GALLERY-1 SECTION-->
+<!--PHOTO DIVIDER5 SECTION START-->
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="photo_divider5" class="photo_divider">
+            </div>
+        </div>
+    </div>
+</section><!--END of PHOTO DIVIDER5 SECTION-->
+<!--GALLERY-2 SECTION START-->
+<section>
+    <div class="container">
+        <!-- TITLE -->
+        <div class="row">
+            <div id="gallery2_title" class="col-md-12 text-center the_title animation fadeInUp" style="visibility: hidden;">
+                <h2 class="margin0 padding0">PHOTO GALLERY-2</h2>
+                <span class="margin0 padding0 sub_title">OUR MOMENT</span>
+            </div>
+            <div class="col-md-offset-1"></div>
+            <div id="gallery2_intro" class="col-md-10 col-md-offset-1 text-center animation delay1 fadeInUp" style="visibility: hidden;">
+                <span class="glyphicon glyphicon-heart intro_heart"></span>
+                <span class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus, leo at pretium commodo, dui ipsum tristique dolor, in ullamcorper tellus velit quis nisl. In placerat volutpat elit quis dictum. Ut id sem nec mauris lacinia rhoncus.</span>
+            </div>
+        </div><!-- END TITLE -->
+        <!-- GALLERY-2-->
+        <div class="row">
+            <div class="col-md-12">
+
+                <div id="gallery2" class="masonry" style="position: relative; height: 570px;">
+
+                    <!-- MASONRY GRID SIZER -->
+                    <div class="grid_sizer"></div>
+
+                    <!-- GALLERY ITEM-->
+                    <div class="masonry_col animation fadeIn" style="position: absolute; left: 0px; top: 0px; visibility: hidden;">
+                        <div class="photo_item">
+                            <div class="photo_item_preview">
+                                <a href="#">
+                                    <img src="@ViewBag.UrlDomain/img/we-2.jpg" alt="">
+                                </a>
+                                <div class="photo_item_overlay">
+                                    <a href="http://demo.dethemes.com/luv/images/gallery/gallery_photo1.jpg">
+                                        <span class="icon_background"></span>
+                                        <span class="glyphicon glyphicon-zoom-in icon_button"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- END of GALLERY ITEM-->
+                    <!-- GALLERY ITEM-->
+                    <div class="masonry_col animation fadeIn" style="position: absolute; left: 285px; top: 0px; visibility: hidden;">
+                        <div class="photo_item">
+                            <div class="photo_item_preview">
+                                <a href="#">
+                                    <img src="@ViewBag.UrlDomain/img/we-1.jpg" alt="">
+                                </a>
+                                <div class="photo_item_overlay">
+                                    <a href="http://demo.dethemes.com/luv/images/gallery/gallery_photo4.jpg">
+                                        <span class="icon_background"></span>
+                                        <span class="glyphicon glyphicon-zoom-in icon_button"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- END of GALLERY ITEM-->
+                    <!-- GALLERY ITEM-->
+                    <div class="masonry_col animation fadeIn" style="position: absolute; left: 570px; top: 0px; visibility: hidden;">
+                        <div class="photo_item">
+                            <div class="photo_item_preview">
+                                <a href="#">
+                                    <img src="@ViewBag.UrlDomain/img/we-3.jpg" alt="">
+                                </a>
+                                <div class="photo_item_overlay">
+                                    <a href="http://demo.dethemes.com/luv/images/gallery/gallery_photo7.jpg">
+                                        <span class="icon_background"></span>
+                                        <span class="glyphicon glyphicon-zoom-in icon_button"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- END of GALLERY ITEM-->
+                    <!-- GALLERY ITEM-->
+                    <div class="masonry_col animation fadeIn" style="position: absolute; left: 855px; top: 0px; visibility: hidden;">
+                        <div class="photo_item">
+                            <div class="photo_item_preview">
+                                <a href="#">
+                                    <img src="@ViewBag.UrlDomain/img/we-4.jpg" alt="">
+                                </a>
+                                <div class="photo_item_overlay">
+                                    <a href="http://demo.dethemes.com/luv/images/gallery/gallery_photo10.jpg">
+                                        <span class="icon_background"></span>
+                                        <span class="glyphicon glyphicon-zoom-in icon_button"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- END of GALLERY ITEM-->
+                    <!-- GALLERY ITEM-->
+                    <div class="masonry_col animation fadeIn" style="position: absolute; left: 0px; top: 285px; visibility: hidden;">
+                        <div class="photo_item">
+                            <div class="photo_item_preview">
+                                <a href="#">
+                                    <img src="@ViewBag.UrlDomain/img/we-4.jpg" alt="">
+                                </a>
+                                <div class="photo_item_overlay">
+                                    <a href="./content/luv/img/gallery_photo2.jpg">
+                                        <span class="icon_background"></span>
+                                        <span class="glyphicon glyphicon-zoom-in icon_button"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- END of GALLERY ITEM-->
+                    <!-- GALLERY ITEM-->
+                    <div class="masonry_col animation fadeIn" style="position: absolute; left: 285px; top: 285px; visibility: hidden;">
+                        <div class="photo_item">
+                            <div class="photo_item_preview">
+                                <a href="#">
+                                    <img src="../Content/luv/img/we-3.jpg" alt="">
+                                </a>
+                                <div class="photo_item_overlay">
+                                    <a href="http://demo.dethemes.com/luv/images/gallery/gallery_photo9.jpg">
+                                        <span class="icon_background"></span>
+                                        <span class="glyphicon glyphicon-zoom-in icon_button"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- END of GALLERY ITEM-->
+                    <!-- GALLERY ITEM-->
+                    <div class="masonry_col animation fadeIn" style="position: absolute; left: 570px; top: 285px; visibility: hidden;">
+                        <div class="photo_item">
+                            <div class="photo_item_preview">
+                                <a href="#">
+                                    <img src="@ViewBag.UrlDomain/img/we-1.jpg" alt="">
+                                </a>
+                                <div class="photo_item_overlay">
+                                    <a href="http://demo.dethemes.com/luv/images/gallery/gallery_photo11.jpg">
+                                        <span class="icon_background"></span>
+                                        <span class="glyphicon glyphicon-zoom-in icon_button"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- END of GALLERY ITEM-->
+                    <!-- GALLERY ITEM-->
+                    <div class="masonry_col animation fadeIn" style="position: absolute; left: 855px; top: 285px; visibility: hidden;">
+                        <div class="photo_item">
+                            <div class="photo_item_preview">
+                                <a href="#">
+                                    <img src="./content/luv/img/gallery2_thumb8.jpg" alt="">
+                                </a>
+                                <div class="photo_item_overlay">
+                                    <a href="./content/luv/img/gallery_photo8.jpg">
+                                        <span class="icon_background"></span>
+                                        <span class="glyphicon glyphicon-zoom-in icon_button"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- END of GALLERY ITEM-->
+
+                </div><!--END of MASONRY-->
+            </div><!-- END of GALLERY-2 COL-->
+        </div> <!-- END of GALLERY-2 ROW-->
+
+    </div>  <!--END of CONTAINER-->
+</section> <!--END of GALLERY-2 SECTION-->
+
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="photo_divider6" class="photo_divider">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="photo_divider7" class="photo_divider">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="secPrewedding">
+    <div class="container">
+   
+        <div class="row">
+            <div id="blog2_title" class="col-md-12 text-center the_title animation fadeInUp" style="visibility: hidden;">
+                <h2 class="margin0 padding0">PRE-WEDDING PHOTO</h2>
+                <span class="margin0 padding0 sub_title">taken on 17 Nov 2014</span>
+            </div>
+            <div class="col-md-offset-1"></div>
+            <div id="blog2_intro" class="col-md-10 col-md-offset-1 text-center animation delay1 fadeInUp" style="visibility: hidden;">
+                <span class="glyphicon glyphicon-heart intro_heart"></span>
+                <span class="intro">The pre-wedding photo taken at Batu Ferringhi, Bank Street and Baba Nyongya House located in Penang.</span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="masonry" id="prewedding" style="position: relative; height: 2072px;">
+                 
+                    <!-- MASONRY GRID SIZER -->
+                    <div class="grid_sizer_blog"></div>
+
+                    <div class="masonry_col_blog w2 animation fadeIn" >
+                        <div class="photo_item">
+                            <div class="photo_item_wrap fix_height">
+                                <a href="@ViewBag.UrlDomain/img/prewedding6.jpg">
+                                    <img src="@ViewBag.UrlDomain/img/prewedding6.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="masonry_col_blog animation fadeIn">
+                        <div class="photo_item">
+                            <div class="photo_item_wrap">
+                                <a href="@ViewBag.UrlDomain/img/prewedding1.jpg">
+                                    <img src="@ViewBag.UrlDomain/img/prewedding1.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+      
+                    <div class="masonry_col_blog animation fadeIn">
+                        <div class="photo_item">
+                            <div class="photo_item_wrap">
+                                <a href="@ViewBag.UrlDomain/img/prewedding4.jpg">
+                                    <img src="@ViewBag.UrlDomain/img/prewedding4.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="masonry_col_blog animation fadeIn">
+                        <div class="photo_item">
+                            <div class="photo_item_wrap">
+                                <a href="@ViewBag.UrlDomain/img/prewedding5.jpg">
+                                    <img src="@ViewBag.UrlDomain/img/prewedding5.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="masonry_col_blog animation fadeIn">
+                        <div class="photo_item">
+                            <div class="photo_item_wrap">
+                                <a href="@ViewBag.UrlDomain/img/prewedding3.jpg">
+                                    <img src="@ViewBag.UrlDomain/img/prewedding3.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="masonry_col_blog animation fadeIn">
+                        <div class="photo_item">
+                            <div class="photo_item_wrap">
+                                <a href="@ViewBag.UrlDomain/img/prewedding7.jpg">
+                                    <img src="@ViewBag.UrlDomain/img/prewedding7.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="masonry_col_blog animation fadeIn">
+                        <div class="photo_item">
+                            <div class="photo_item_wrap">
+                                <a href="@ViewBag.UrlDomain/img/prewedding8.jpg">
+                                    <img src="@ViewBag.UrlDomain/img/prewedding8.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="masonry_col_blog animation fadeIn">
+                        <div class="photo_item">
+                            <div class="photo_item_wrap">
+                                <a href="@ViewBag.UrlDomain/img/prewedding9.jpg">
+                                    <img src="@ViewBag.UrlDomain/img/prewedding9.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="masonry_col_blog animation fadeIn">
+                        <div class="photo_item">
+                            <div class="photo_item_wrap">
+                                <a href="@ViewBag.UrlDomain/img/prewedding10.jpg">
+                                    <img src="@ViewBag.UrlDomain/img/prewedding10.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="masonry_col_blog animation fadeIn">
+                        <div class="photo_item">
+                            <div class="photo_item_wrap">
+                                <a href="@ViewBag.UrlDomain/img/prewedding11.jpg">
+                                    <img src="@ViewBag.UrlDomain/img/prewedding11.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+       
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <span id="loading_more">Loading...</span>
+                <a href="#" id="blogmore" class="btn btn-default btn-lg">Load More</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="rsvp">
+    <div class="container-fluid">
+        <div class="row">
+            <div id="photo_divider9" class="photo_divider">
+                <div class="container">
+                    <div class="events">
+                        <h2 class="animated fadeIn">You are welcome to attend our Wedding Party and our Wedding Dinner <br> on 1st and 2nd of May at Muar!</h2>
+                        <div class="col-md-12 text-center animated fadeIn">
+                            <div class="form-group">
+                                <a href="https://www.facebook.com/events/1567673710144805/?fref=ts" target="_blank" class="btn btn-purple btn-lg">RSVP here</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div id="footer_text" class="col-md-12 text-center">
+                   Develop by - <a href="https://www.facebook.com/Walkboy.Khoo">Khoo</a> © 2015 - all right reserved.
+            </div>
+        </div>
+    </div>
+</section>
 
 @section Scripts {
     @Scripts.Render("~/bundles/luv/js")

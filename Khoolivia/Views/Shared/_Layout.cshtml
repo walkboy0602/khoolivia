@@ -4,19 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khoo & Olivia | 2 May 15</title>
-    @Styles.Render("~/Content/bootstrap")    
+    @Styles.Render("~/Content/bootstrap")
     @RenderSection("content", required: false)
     @Scripts.Render("~/bundles/modernizr")
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvrrb8hRSWoXjNO-4galp4YdfkdcyoUdE&libraries=places"></script>
 
 </head>
 <body>
-   
-    <div class="body-content">
-        @RenderBody()
-        <hr />
-        <footer></footer>
-    </div>
-
+    @RenderBody()
     @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>*@
 
     @Scripts.Render("~/bundles/jquery")
