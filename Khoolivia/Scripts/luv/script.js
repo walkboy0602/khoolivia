@@ -100,7 +100,7 @@
 				{ image: DomainUrl + '/img/background2.jpg' },
 				{ image: DomainUrl + '/img/background3.jpg' },
                 { image: DomainUrl + '/img/background4.jpg' },
-                { image: DomainUrl + '/img/background1.jpg' }
+                { image: DomainUrl + '/img/background1.jpg' },
 			]
 		});
 	});
@@ -476,13 +476,13 @@
 			$(this).hide();
 			$('#loading_more').show();
 			a = a + 1;
-			jQuery.get('blog-more.php?page=' + a, function( data ) {
+			jQuery.get('/luv/morephoto', function( data ) {
 				// Make jQuery object from HTML string
 				var $moreBlocks = $($.parseHTML(data)).filter('*');
 				
 				$moreBlocks.hide();
 				// Append new blocks
-				jQuery('#blog2').append( $moreBlocks );
+				jQuery('#prewedding').append($moreBlocks);
 				
 				$moreBlocks.imagesLoaded().progress( function( imgLoad, image ) {
     				// get item
@@ -491,20 +491,24 @@
     				// un-hide item
     				$item.show();
     				// masonry does its thing
-    				jQuery('#blog2').masonry( 'appended', $item );	
+    				jQuery('#prewedding').masonry('appended', $item);
   				});
 				
-				$moreBlocks.imagesLoaded().done( function() {
-					if (data == "empty")
-					{
-						jQuery('#blogmore').hide();
-						$('#loading_more').hide();
-					}
-					else
-					{
-						$('#loading_more').hide();
-						$('#blogmore').show();
-					}
+				$moreBlocks.imagesLoaded().done(function () {
+
+				    jQuery('#blogmore').hide();
+				    $('#loading_more').hide();
+
+					//if (data == "empty")
+					//{
+					//	jQuery('#blogmore').hide();
+					//	$('#loading_more').hide();
+					//}
+					//else
+					//{
+					//	$('#loading_more').hide();
+					//	$('#blogmore').show();
+					//}
 					
 					if( !device.tablet() && !device.mobile() ) {
 						$.waypoints('refresh');
