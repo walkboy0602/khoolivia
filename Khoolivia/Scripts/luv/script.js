@@ -220,19 +220,25 @@
 	$('#ourVacation').magnificPopup({
     	items: [
       	{
-      	    src: DomainUrl + '/img/we-7.jpg'
+      	    src: DomainUrl + '/img/we-1.jpg'
       	},
      	{
-     	    src: DomainUrl + '/img/we-11.jpg'
+     	    src: DomainUrl + '/img/we-2.jpg'
       	},
       	{
-      	    src: DomainUrl + '/img/we-12.jpg'
+      	    src: DomainUrl + '/img/we-3.jpg'
       	},
         {
-            src: DomainUrl + '/img/we-13.jpg'
+            src: DomainUrl + '/img/we-4.jpg'
+        },
+        {
+            src: DomainUrl + '/img/we-5.jpg'
         },
         {
             src: DomainUrl + '/img/we-6.jpg'
+        },
+        {
+            src: DomainUrl + '/img/we-7.jpg'
         },
         {
             src: DomainUrl + '/img/we-8.jpg'
@@ -243,6 +249,21 @@
         {
             src: DomainUrl + '/img/we-10.jpg'
         },
+        {
+            src: DomainUrl + '/img/we-11.jpg'
+        },
+        {
+            src: DomainUrl + '/img/we-12.jpg'
+        },
+        {
+            src: DomainUrl + '/img/we-13.jpg'
+        },
+        {
+            src: DomainUrl + '/img/we-14.jpg'
+        },
+        {
+            src: DomainUrl + '/img/we-15.jpg'
+        }
     	],
     	gallery: {
      	 	enabled: true
@@ -263,7 +284,13 @@
 	});
 	
 	$('#friendGallery').magnificPopup({
-    	items: [
+	    items: [
+        {
+            src: DomainUrl + '/img/friend-9.jpg'
+        },
+        {
+            src: DomainUrl + '/img/friend-10.jpg'
+        },
      	{
      	    src: DomainUrl + '/img/friend-1.jpg'
       	},
@@ -278,7 +305,19 @@
       	},
     	{
 	        src: DomainUrl + '/img/friend-0.jpg'
-	    }
+    	},
+        {
+            src: DomainUrl + '/img/friend-5.jpg'
+        },
+        {
+            src: DomainUrl + '/img/friend-6.jpg'
+        },
+        {
+            src: DomainUrl + '/img/friend-7.jpg'
+        },
+        {
+            src: DomainUrl + '/img/friend-8.jpg'
+        }
     	],
     	gallery: {
      	 	enabled: true
@@ -298,17 +337,35 @@
   		},
 	});
 	
-	$('#category3').magnificPopup({
-    	items: [
+	$('#familyGallery').magnificPopup({
+	    items: [
+        {
+            src: DomainUrl + '/img/family-0.jpg'
+        },
       	{
-        	src: 'images/gallery/gallery_photo7.jpg'
+      	    src: DomainUrl + '/img/family-1.jpg'
       	},
      	{
-        	src: 'images/gallery/gallery_photo8.jpg',
+     	    src: DomainUrl + '/img/family-2.jpg'
       	},
       	{
-        	src: 'images/gallery/gallery_photo9.jpg',
-      	}
+      	    src: DomainUrl + '/img/family-3.jpg'
+      	},
+        {
+            src: DomainUrl + '/img/family-4.jpg'
+        },
+        {
+            src: DomainUrl + '/img/family-5.jpg'
+        },
+        {
+            src: DomainUrl + '/img/family-6.jpg'
+        },
+        {
+            src: DomainUrl + '/img/family-7.jpg'
+        },
+        {
+            src: DomainUrl + '/img/family-8.jpg'
+        },
     	],
     	gallery: {
      	 	enabled: true
@@ -399,9 +456,22 @@
 			stopOnHover: true,
 			pagination: false
 		});
-    });
-	
-	// Blog-2
+	});
+
+    // Childhood
+    //==================================================================================
+	var childhood = $('#childhood');
+	// initialize Masonry after all images have loaded  
+	childhood.imagesLoaded(function () {
+	    childhood.masonry({
+	        columnWidth: ".grid_sizer_blog",
+	        itemSelector: ".masonry_col_blog",
+	        transitionDuration: "1s",
+	        gutter: 20
+	    });
+	});
+
+    //  PREWEDDING PHOTO
 	//==================================================================================
 	var $prewedding = $('#prewedding');
 	// initialize Masonry after all images have loaded  
@@ -415,9 +485,9 @@
 	});
 
 
-	// PREWEDDING PHOTO
+	// Magnific
     //==================================================================================
-	$('#prewedding').magnificPopup({
+	$('#prewedding, #childhood').magnificPopup({
 	    delegate: '.photo_item_wrap a', // child items selector, by clicking on it popup will open
 	    type: 'image',
 	    closeOnContentClick: false,
