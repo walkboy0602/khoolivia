@@ -616,7 +616,7 @@
              mapTypeControl: true, 
              scaleControl: true, 
              streetViewControl: true, 
-             scrollwheel: true, 
+             scrollwheel: false, 
              //styles: [ { "stylers": [ { "hue": "#00c0b6" }, { "gamma": 1 }, { "saturation": -50 } ] } ], 
              onComplete: function() {
                  // Resize and re-center the map on window resize event
