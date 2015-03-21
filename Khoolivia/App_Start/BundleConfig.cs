@@ -24,8 +24,7 @@ namespace Khoolivia
                       "~/Scripts/respond.js"));
 
             bundles.Add(new ScriptBundle("~/content/bootstrap").Include(
-                      "~/Content/bootstrap.min.css", 
-                      "~/Content/font-awesome.css"));
+                      "~/Content/bootstrap.min.css").Include("~/Content/font-awesome.css", new CssRewriteUrlTransform()));
 
             #region Wedding
             bundles.Add(new ScriptBundle("~/bundles/wedding/js").Include(
